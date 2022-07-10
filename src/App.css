@@ -28,10 +28,72 @@
   color: #61dafb;
 }
 
+.wrap>div {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  grid-gap: 60px 0;
+  flex-wrap: wrap;
+  padding-top: 200px;
+}
+
+.wrap>div>* {
+  width: 50%;
+}
+
+.el {
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+  border: 1px solid #f0f0f0;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.el span {
+  width: 40%;
+}
+
+.el button {
+  width: 20%;
+  font-size: 12px;
+  background-color: #9999FF;
+  border: 1px solid #9999FF;
+  height: 40px;
+}
+
+.tdo {
+  display: inline;
+  padding: 0 10px;
+  font-weight: 700;
+  color: red;
+  text-decoration: line-through;
+}
+
+.wrap form input,
+.wrap form button {
+  box-sizing: border-box;
+  display: block;
+  padding: 0 15px;
+  font-size: 14px;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 15px;
+  border: 1px solid #9999FF;
+}
+
+.wrap form button {
+  background-color: #9999FF;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
