@@ -29,6 +29,7 @@ function Cart() {
     const delProd = (stock) => {
         for (let i = 0; i < prods.length; i++) {
             prods[i].prodPrice2 = '';
+            console.log(prods[i].prodPrice2);
         }
         stocks.isStock = 0;
         setProds([...prods])

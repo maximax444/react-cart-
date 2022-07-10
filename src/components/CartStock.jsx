@@ -11,7 +11,7 @@ function CartStock(props) {
     }
     const delStock = (e) => {
         e.preventDefault();
-        props.change({ ...stock })
+        props.del({ ...stock })
         setStock({ stockNum: '' })
 
     }
